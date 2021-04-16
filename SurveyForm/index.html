@@ -1,0 +1,217 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<div class="container">
+    <header id="header">
+      <h1 id="title" class="text-center">Podcast Survey Form</h1>
+          <p id="description" class="description text-center">
+            <em>Thank you for taking the time to complete this survey</em>
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"   
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+          />
+      </div>
+       <div class="form-group">
+        <label id="email-label" for="name">Email</label>
+        <input
+          type="email"
+          name="email"   
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email"
+          required
+          />
+      </div>
+       <div class="form-group">
+        <label id="number-label" for="number"
+          >Age<span class="clue">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+        />
+      </div>
+        <div class="form-group">
+        <p>Which option best describes your listening habits?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select</option>
+          <option value="full">Full Time Podcast Listener</option>
+          <option value="occasional">Occasional Listener</option>
+          <option value="none">I Don't Listen To Podcasts</option>
+          <option value="other">What's A Podcast?</option>
+        </select>
+      </div>
+      
+       <div class="form-group">
+        <p>When do you usually listen to podcasts?</p>
+        <label>
+          <input
+            name="podcast-user"
+            value="homework"
+            type="radio"
+            class="input-radio"
+            checked
+          />Doing Homework</label
+        >
+        <label>
+          <input
+            name="podcast-user"
+            value="workingout"
+            type="radio"
+            class="input-radio"
+          />Working Out</label
+        >
+  
+        <label
+          ><input
+            name="podcast-user"
+            value="driving"
+            type="radio"
+            class="input-radio"
+          />Driving</label
+        >
+         
+         <label
+          ><input
+            name="podcast-user"
+            value="other"
+            type="radio"
+            class="input-radio"
+          />Other</label
+        >
+      </div>
+      
+      <div class="form-group">
+        <p>
+          What do you like most about podcasts?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="guests">Guest Interviews</option>
+          <option value="banter">Witty Banter</option>
+          <option value="research">Thorough Research</option>
+          <option value="time-kill">They Kill Time</option>
+        </select>
+      </div>
+      
+       <div class="form-group">
+        <p>
+          What sort of podcasts do you enjoy?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="true-crime"
+            type="checkbox"
+            class="input-checkbox"
+          />True Crime</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="celebrity-interviews"
+            type="checkbox"
+            class="input-checkbox"
+          />Celebrity Interviews</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="educational"
+            type="checkbox"
+            class="input-checkbox"
+          />Educational</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="history"
+            type="checkbox"
+            class="input-checkbox"
+          />History</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="sports"
+            type="checkbox"
+            class="input-checkbox"
+          />Sports</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="comedy"
+            type="checkbox"
+            class="input-checkbox"
+          />Comedy</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="health-lifestyle"
+            type="checkbox"
+            class="input-checkbox"
+          />Health/Lifestyle</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="film-discussion"
+            type="checkbox"
+            class="input-checkbox"
+          />Film Discussion</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="audiodrama"
+            type="checkbox"
+            class="input-checkbox"
+          />Audiodrama</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="joe-rogan"
+            type="checkbox"
+            class="input-checkbox"
+          />Joe Rogan</label
+        >
+        <label
+          >
+      </div>
+      
+      <div class="form-group">
+        <p>Any comments or suggestions? Favorite Podcasts?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
